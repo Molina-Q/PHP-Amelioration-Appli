@@ -5,14 +5,13 @@
 }
 
 body {
-    font-family: Geneva, Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;
 }
 
 /******************** general ********************/
 
 main {
     padding: 0 10%;
-
 }
 
 .productsCount {
@@ -29,23 +28,39 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     padding: 10px 0 30px;
     border-bottom: 3px solid gray;
+}
+
+nav div {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 nav p {
     color: black;
     font-size: 2em;
-
     padding: 5px;
-
 }
 
 nav p a{
     text-decoration: none;
     color: black;
+}
+.countBloc {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(51, 184, 51);
+    border-radius:50% ;
 
+}
+.countProducts {
+    text-align: center;
+    padding: 0;
+    color: white;
+    font-size: 1.5em;
 }
 
 /*********************************** page index ***********************************/
@@ -170,10 +185,14 @@ table {
 
 tr {
     border-bottom: 1px solid rgb(163, 163, 163); 
+    z-index: 15px;
+
 }
 
 th {
     border-bottom: 1px solid rgb(163, 163, 163); 
+    z-index: 15px;
+
     text-transform:uppercase; 
     font-weight:bold; 
     width:200px;
@@ -185,7 +204,7 @@ td {
     border-bottom: 1px solid rgb(163, 163, 163); 
     padding: 15px; 
     text-align:left;
-    height: 1px;
+    z-index: 15px;
 }
 
 td:nth-child(even) {
@@ -196,10 +215,30 @@ td:nth-child(odd) {
     background-color: rgb(238, 238, 238);
 }
 
+.qttColumn {
+    border-collapse: collapse;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border: 0;
+
+}
+
 .deleteBtn {
 
 }
 
 .totalGeneral {
+
 }
+
+i {
+    text-decoration:unset;
+    font-style: normal;
+    color: black;
+}
+
+
 

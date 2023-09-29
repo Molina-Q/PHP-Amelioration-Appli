@@ -1,5 +1,6 @@
 <?php 
 session_start(); 
+
 ?>
 
 <!DOCTYPE html>
@@ -14,12 +15,9 @@ session_start();
 </head>
 
 <body>
-    <header>
-        <nav>
-            <p><a href="index.php">Ajouter un produit</a></p>
-            <p><a href="recap.php">Vos produits</a></p>
-        </nav>
-    </header>
+
+    <?php require_once "header.php"; ?>
+
     <main>
         <div id="produitMainContent">
             <h1>Ajouter un produit</h1>
@@ -40,7 +38,7 @@ session_start();
                 <p class = "formProduitQtt">
                     <label>
                         Quantité désirée 
-                        <input type="number" name="qtt" value="" placeholder="1">
+                        <input type="number" name="qtt" value="1">
                     </label>
                 </p>
                 <p class = "formProduitBtn">
@@ -52,19 +50,19 @@ session_start();
         <div class="productsCount">
             <?php 
 
-                if(!isset($_SESSION['products']) || empty($_SESSION['products'])) {    
-                    echo "<p>Nombres de produits : 0 </p>";
+                if(!isset($_SESSION['products']) || empty($_SESSION['products'])) { 
+
                 } else {
-                    echo "<p>Nombres de produits : ".count($_SESSION['products'])."</p>";
 
                     foreach($_SESSION['products'] as $number => $product) {
-                        if($product['price'] > 0.99) {
-                            $alerte =  "<p>Le prix est positif !</p>";
+                        if($product['price'] > 0.00) {
+                            $alertePrix =  "<p>Le prix est positif !</p>";
                         } else {
-                            $alerte = "<p>Le prix est négatif !</p>";
+                            $alertePrix = "<p>Le prix est négatif !</p>";
                         }
+
                     }
-                    echo $alerte;
+                    echo $alertePrix;
                 }
             ?>
         </div>
