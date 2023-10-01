@@ -1,0 +1,255 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+/******************** general ********************/
+
+main {
+    padding: 0 10%;
+}
+
+.productsCount {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+/******************** header ********************/
+header {
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0 30px;
+    border-bottom: 3px solid gray;
+}
+
+nav div {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p {
+    color: black;
+    font-size: 2em;
+    padding: 5px;
+}
+
+nav p a{
+    text-decoration: none;
+    color: black;
+}
+.countBloc {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(51, 184, 51);
+    border-radius:50% ;
+
+}
+.countProducts {
+    text-align: center;
+    padding: 0;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*********************************** page index ***********************************/
+#produitMainContent {
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+/*************** form ***************/
+form {
+    width: 1000px;
+    height: 600px;
+
+    margin-top: 25px;
+
+    border: 1px solid gray;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formProduitNom label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+
+    color: black;
+}
+
+.formProduitNom label input {
+    height: 50px;
+
+    border-radius: 10px;
+    border: 1px solid black;
+    /* box-shadow:6px 6px 13px black; */
+
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.formProduitPrix label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+
+}
+
+.formProduitPrix label input {
+    height: 50px;
+
+    border-radius: 10px;
+    border: 1px solid black;
+    /* box-shadow:6px 6px 13px black; */
+
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.formProduitQtt label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+
+}
+
+.formProduitQtt label input{
+    height: 50px;
+
+    border-radius: 10px;
+    border: 1px solid black;
+    /* box-shadow:6px 6px 13px rgb(196, 196, 196); */
+
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.formProduitBtn input{
+    width: 200px;
+    height: 100px;
+
+    border-radius: 10px;
+
+    font-size: 1.4em;
+
+    background-color: rgb(230, 230, 230);
+}
+
+.formProduitBtn input:active{
+    background-color: rgb(158, 158, 158);
+}
+
+/*********************************** page recap ***********************************/
+
+/*************** table ***************/
+#recapContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+table {
+    border-bottom: 1px solid black; 
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid rgb(163, 163, 163); 
+    z-index: 15px;
+
+}
+
+th {
+    border-bottom: 1px solid rgb(163, 163, 163); 
+    z-index: 15px;
+
+    text-transform:uppercase; 
+    font-weight:bold; 
+    width:200px;
+    padding: 10px; 
+    text-align:left;
+}
+
+th a {
+    text-decoration:unset;
+    font-style: normal;
+    color: black;
+}
+
+td {
+    border-bottom: 1px solid rgb(163, 163, 163); 
+    padding: 15px; 
+    text-align:left;
+    z-index: 15px;
+}
+
+td:nth-child(even) {
+    background-color: rgb(248, 248, 248);
+}
+
+td:nth-child(odd) {
+    background-color: rgb(238, 238, 238);
+}
+
+.qttColumn {
+    border-collapse: collapse;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border: 0;
+
+}
+
+.deleteBtn {
+
+}
+
+.totalGeneral {
+
+}
+
+a {
+    text-decoration:unset;
+}
+
+i {
+    text-decoration:unset;
+    font-style: normal;
+    color: black;
+    font-size: 1.3em;
+}
+
+
+
